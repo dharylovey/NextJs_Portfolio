@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-gradient-to-tl from-slate-200 via-sky-100 to-orange-100 bg-cover`}>
         {children}
+        <SpeedInsights />
         <Footer />
       </body>
 
