@@ -8,8 +8,8 @@ import { Tech } from "@/components/ui/Tech";
 
 export default function Component() {
   return (
-    <section 
-      id="about" 
+    <section
+      id="about"
       className="py-16 "
       data-aos="fade-up"
       data-aos-duration="1500"
@@ -29,6 +29,11 @@ export default function Component() {
               alt="about image"
               className="justify-center object-cover aspect-auto rounded-xl shadow-2xl"
               priority={true}
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-once="false"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="200"
             />
           </div>
 
@@ -38,6 +43,11 @@ export default function Component() {
                 <li
                   key={skill.header}
                   className="flex flex-col items-center justify-center w-full p-5 border border-slate-500/[0.5] rounded-xl shadow-xl bg-white"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-once="false"
+                  data-aos-easing="ease-in-out"
+                  data-aos-offset="200"
                 >
                   <Image
                     src={skill.src}
@@ -91,7 +101,7 @@ As a junior full stack developer, I'm enthusiastic about delivering into the dyn
       </div>
       {/* <SkillsAnimation /> */}
 
-      
+
     </section>
   );
 }

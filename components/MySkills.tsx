@@ -87,7 +87,7 @@ const MySkills = () => {
                                     />
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent className="text-lg antialiased">
+                            <AccordionContent className="text-lg antialiased italic border-l-8 p-4 items-center border-slate-500">
                                 {item.content}
                             </AccordionContent>
                         </AccordionItem>
@@ -117,7 +117,7 @@ const MySkills = () => {
                                     />
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent className="text-lg antialiased">
+                            <AccordionContent className="text-lg antialiased italic border-l-8 p-4 items-center border-slate-500">
                                 {item.content}
                             </AccordionContent>
                         </AccordionItem>
