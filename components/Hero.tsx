@@ -5,11 +5,20 @@ import { Button } from "@/components/ui/button"
 import { techStacks } from "@/lib/data"
 import { hero } from "@/lib/data"
 import { Typewriter } from "react-simple-typewriter"
+import Link from "next/link"
+
 
 const Hero = () => {
   return (
-    <section id="home" className="flex flex-wrap justify-around w-full min-h-screen gap-1 mx-auto xl:flex-row-col">
-      <div className="relative flex flex-col justify-center w-full md:items-center lg:items-center xl:w-2/5 max-xl:padding-x pt-28">
+    <section
+      id="home"
+      className="flex flex-wrap justify-around w-full min-h-screen gap-1 mx-auto xl:flex-row-col px-20"
+    >
+      <div
+        className="relative flex flex-col justify-center w-full md:items-center lg:items-center xl:w-2/5 max-xl:padding-x pt-28 ring-red-600"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
         <Image
           src='/image/my_photo.png'
           width={400}
@@ -19,22 +28,25 @@ const Hero = () => {
           priority={true}
         />
       </div>
-      <div className="relative flex flex-col items-start justify-center w-full xl:w-2/5 max-xl:padding-x pt-28">
+      <div
+        className="relative flex flex-col items-start justify-center w-full xl:w-2/5 max-xl:padding-x pt-28"
+        data-aos="fade-left"
+      >
         {hero.map((header, idx) => (
           <div key={idx}>
             <h2 className="my-4 text-xl antialiased font-bold md:text-5xl">
               &lt;
               <span className="antialiased text-transparent bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text">
 
-              <Typewriter
-                words={['Full Stack Developer ', 'React Developer ', 'Next JS Developer ']}
-                loop={5}
-                cursor
-                cursorStyle='|'
-                typeSpeed={150}
-                deleteSpeed={50}
-                delaySpeed={1000}
-              />
+                <Typewriter
+                  words={['Full Stack Developer ', 'React Developer ', 'Next JS Developer ']}
+                  loop={5}
+                  cursor
+                  cursorStyle='|'
+                  typeSpeed={150}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
               </span>
               /&gt;
             </h2>
@@ -55,7 +67,13 @@ const Hero = () => {
             size={'lg'}
             className='text-xs text-white transition duration-500 ease-in-out border-none md:text-base bg-slate-600 hover:bg-white hover:text-black hover:-traslate-y-3 rounded-xl shadow-xl'
           >
-            Download CV
+            <Link 
+              href="/file/CV.pdf"
+              download={true}
+              target="_blank"
+            >
+              Download CV
+            </Link>
           </Button>
           <Button
             variant={"outline"}

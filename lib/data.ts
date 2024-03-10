@@ -1,4 +1,5 @@
 
+
 import React from "react"
 import { FaHtml5 } from "react-icons/fa"
 import { SiTailwindcss } from "react-icons/si";
@@ -27,7 +28,7 @@ export const hero = [
 
 export const techStacks = [
     { src: '/image/html.svg', alt: 'html' },
-    { src: '/image/css.svg', alt: 'ccs' },
+    { src: '/image/css.svg', alt: 'css' },
     { src: '/image/javascript.svg', alt: 'javascript' },
     { src: '/image/tailwindcss.svg', alt: 'tailwindcss' },
     { src: '/image/react.svg', alt: 'react' },
@@ -41,9 +42,9 @@ export const aboutMe = [
     {
         src: '/image/experience.png',
         header: 'Experience',
-        desc: '1 Year'
+        desc: '8 months'
         ,
-        footer: 'Full Stack Developer'
+        footer: 'Full Stack Web Developer'
     },
     {
         src: '/image/education.png',
@@ -141,56 +142,59 @@ export const accordionData = [
     {
         id: 1,
         label: 'HTML',
-        content: 'HTML is fun and  easy.',
+        content: '"Semantics is a subject I deeply enjoy! 😄"',
         progress: 80
 
     },
     {
         id: 2,
         label: 'CSS',
-        content: 'CSS is fun and  easy.',
+        content: '"I know how to center div 😁"',
         progress: 50
     },
     {
         id: 3,
         label: 'Tailwind',
-        content: 'Tailwind is fun and  easy.',
+        content: '"I highly recommend to use this library 👍. "',
         progress: 50
     },
     {
         id: 4,
         label: 'JavaScript',
-        content: 'JavaScript is fun and  easy.',
+        content: '"Arrow function () => { 😉 } "',
         progress: 70
-    },
+    }
+]
+
+export const accordionDataTwo = [
     {
-        id: 5,
+        id: 1,
         label: 'React JS',
-        content: 'React JS is fun and  easy.',
+        content: '"Reusable components are a must! I 💓 it."',
         progress: 40
     },
     {
-        id: 6,
+        id: 2,
         label: 'TypeScript',
-        content: 'TypeScript is fun and  easy.',
+        content: '"Safety first! { 🆎 ✅ }"',
         progress: 35
     },
     {
-        id: 7,
+        id: 3,
         label: 'Express JS',
-        content: 'Express JS is fun and  easy.',
+        content: '"Interesting server stuff. I used this during my capstone project in bootcamp. 💖"',
         progress: 65
     },
     {
-        id: 8,
+        id: 4,
         label: 'MongoDB',
-        content: 'MongoDB is fun and  easy.',
+        content: '"Keep your document safe!"',
         progress: 60
     },
     {
-        id: 9,
+        id: 5,
         label: 'NextJS',
-        content: 'NextJS is fun and  easy.',
+        content: `"This website is made with Next JS. I'm still learning."`,
         progress: 40
     },
 ]

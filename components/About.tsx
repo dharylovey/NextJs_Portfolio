@@ -2,13 +2,19 @@ import Image from "next/image";
 import { aboutMe } from "@/lib/data";
 import Link from "next/link";
 import { Tech } from "@/components/ui/Tech";
+// import SkillsAnimation from "./SkillsAnimation";
 
 
 
 export default function Component() {
   return (
-    <section id="about" className="py-16 ">
-      <div className="flex flex-col items-center justify-center">
+    <section 
+      id="about" 
+      className="py-16 "
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <div className="flex flex-col items-center justify-center px-20">
         <div className="text-center ">
           <p className="my-4 text-xl text-gray-500">Know me more</p>
           <h3 className="text-5xl font-bold">About Me</h3>
@@ -83,6 +89,7 @@ As a junior full stack developer, I'm enthusiastic about delivering into the dyn
           </div>
         </div>
       </div>
+      {/* <SkillsAnimation /> */}
 
       
     </section>

@@ -7,26 +7,16 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import {motion} from 'framer-motion'
+
 
 export default function Component() {
   return (
 
-    <motion.section 
+    <section 
       id="contact" 
       className="py-16 mx-4"
-      initial={{
-        opacity: 0,
-      }}
-      whileInView={{
-        opacity: 1,
-      }}
-      transition={{
-        duration: 3,
-      }}
-      viewport={{
-        once: false,
-      }}
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
       
       <div className="flex justify-center items-center">
@@ -56,7 +46,7 @@ export default function Component() {
           </CardContent>
         </Card>
       </div>
-    </motion.section>
+    </section>
   )
 }
 
