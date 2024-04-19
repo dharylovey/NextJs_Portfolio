@@ -1,27 +1,23 @@
-'use client'
+"use client";
 
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import About from '@/components/About'
+import About from "@/components/About";
 import MySkills from "@/components/MySkills";
-import Experience from "@/components/Experience";
+// import Experience from "@/components/Experience";
 // import Project from "@/components/Project";
-// import Contact from "@/components/Contact";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react"
-import ContactForm from "@/components/contacts/contactForm";
-
+import Contact from "@/components/Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
-
   useEffect(() => {
     AOS.init({
-         duration: 900,
-         once: false,
-       })
- }, [])
-
+      duration: 900,
+      once: false,
+    });
+  }, []);
 
   return (
     <main className="">
@@ -32,7 +28,7 @@ export default function Home() {
         <MySkills />
         {/* <Experience /> */}
         {/* <Project /> */}
-        <ContactForm />
+        <Contact />
       </section>
     </main>
   );

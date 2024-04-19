@@ -2,9 +2,6 @@ import Image from "next/image";
 import { aboutMe } from "@/lib/data";
 import Link from "next/link";
 import { Tech } from "@/components/ui/Tech";
-// import SkillsAnimation from "./SkillsAnimation";
-
-
 
 export default function Component() {
   return (
@@ -100,8 +97,6 @@ As a junior full stack developer, I'm enthusiastic about delivering into the dyn
         </div>
       </div>
       {/* <SkillsAnimation /> */}
-
-
     </section>
   );
 }
